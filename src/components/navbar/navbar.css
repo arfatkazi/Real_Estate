@@ -1,0 +1,121 @@
+nav {
+	position: relative;
+	display: flex;
+	top: 0;
+	left: -15px;
+	align-items: center;
+	gap: 400px;
+	margin-top: 1vw;
+	max-width: 1366px;
+	margin-left: 2.5vw;
+}
+
+.left {
+	display: flex;
+	align-items: center;
+	gap: 100px;
+	font-weight: 600;
+}
+
+.left > .left-nav {
+	display: flex;
+	justify-content: space-around;
+	gap: 20px;
+}
+
+.left-nav > .title {
+	margin-top: 20px;
+	text-transform: capitalize;
+	font-size: 1.1vw;
+}
+
+.left-nav > img {
+	width: 40px;
+	height: 40px;
+	margin-top: 6px;
+}
+
+.left-nav {
+	margin-top: 0.8vw;
+	transition: all 0.3s ease-in-out;
+}
+
+.left-nav:hover {
+	transform: scale(1.1);
+}
+
+.list {
+	display: flex;
+	gap: 50px;
+	margin-top: 2.1vw;
+	padding-left: 30px;
+}
+
+.list > a:hover {
+	transition: all 0.3s ease;
+	transform: scale(1.1);
+}
+
+.right {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 50px;
+	margin-top: 2.1vw;
+	font-weight: 600;
+}
+
+.right > a {
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	margin-right: 1.2vw;
+}
+
+.menu-icon {
+	display: none;
+}
+
+.menu-list {
+	width: 0; /* Start with width of 0 for animation */
+	overflow: hidden;
+	position: absolute;
+	background-color: #000;
+	color: #fff;
+	height: 100vh;
+	top: 0;
+	right: 0; /* Align to the right edge */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: width 0.5s ease; /* Smooth transition for width */
+}
+
+.menu-list.active {
+	width: 100%; /* Expand to full width when active */
+}
+
+.signup {
+	background-color: #000;
+	color: #fff;
+	padding: 0.3vw 1.5vw;
+	border-radius: 5px;
+	text-transform: capitalize;
+	box-shadow: 0 0.1vw 0.4vw rgba(0, 0, 0, 0.5);
+	transition: all 0.2s ease;
+}
+
+.signup:hover {
+	background-color: #302d2d;
+	box-shadow: 0 0.4vw 0.3vw rgba(0, 0, 0, 0.5);
+}
+
+.signin {
+	text-transform: capitalize;
+	transition: all 0.2s ease;
+}
+
+.signin:hover {
+	transform: scale(1.1);
+}

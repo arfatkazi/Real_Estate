@@ -1,0 +1,69 @@
+.homepage {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap; /* Allows wrapping on smaller screens */
+	margin-top: 50px;
+}
+
+.text-container {
+	width: 50%;
+	display: flex;
+	background-color: blue;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.image-container {
+	display: flex;
+	align-items: center;
+	background-color: green;
+	width: 50%;
+}
+
+.image-container > img {
+	width: 100%;
+	height: auto; /* Maintains the aspect ratio */
+	object-fit: cover;
+	margin-top: 30px;
+}
+
+.text-container > .wrapper > h1 {
+	font-size: 3vw;
+	font-weight: 500;
+	margin-top: 170px;
+	padding-left: 20px;
+	background-color: orange;
+	text-transform: capitalize;
+	line-height: 3.5vw;
+	font-family: "Roboto Slab", serif;
+}
+
+.text-container > .wrapper > p {
+	background-color: yellow;
+	margin-top: 40px;
+	font-family: "EB Garamond", serif;
+}
+
+.boxes {
+	background-color: olive;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 190px;
+	gap: 80px;
+	text-transform: capitalize;
+	flex-wrap: wrap; /* Allows boxes to wrap on smaller screens */
+}
+
+.boxes > .box > h1 {
+	font-family: "Roboto Slab", serif;
+	font-weight: 600;
+	font-size: 2vw;
+}
+
+.boxes > .box > h2 {
+	font-weight: lighter;
+	font-family: "EB Garamond", serif;
+}

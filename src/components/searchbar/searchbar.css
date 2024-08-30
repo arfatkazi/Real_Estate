@@ -1,0 +1,80 @@
+.searchbar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+	width: 100%;
+	max-width: 1200px; /* Limits the maximum width on larger screens */
+	padding: 0 15px; /* Adds padding for responsiveness */
+}
+
+.searchbar > .type {
+	display: flex;
+	text-transform: capitalize;
+	margin-bottom: 15px; /* Space between buttons and form */
+}
+
+.buttons {
+	text-transform: capitalize;
+	border: 1px solid #5a5959;
+	font-size: 1rem;
+	font-family: "Roboto Slab", serif;
+	padding: 0.5rem 1.5rem;
+	background-color: #fff;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.buttons:nth-child(1) {
+	border-top-left-radius: 4px;
+	border-right: none;
+}
+
+.buttons:nth-child(2) {
+	border-top-right-radius: 4px;
+	border-left: none;
+}
+
+.active {
+	background-color: #000;
+	color: #fff;
+	border: 1px solid #000;
+	font-size: 1rem;
+	font-family: "Roboto Slab", serif;
+	padding: 0.5rem 1.5rem;
+	cursor: pointer;
+}
+
+.forms {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border: 1px solid #5a5959;
+	padding: 10px;
+	width: 90%; /* Adjusts width for responsiveness */
+	max-width: 800px; /* Sets a maximum width */
+}
+
+.forms > input {
+	border: none;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+	flex: 1 1 150px; /* Flex-grow for responsiveness */
+}
+
+.search-icon {
+	border: none;
+	background-color: #000;
+	color: #fff;
+	padding: 0.4rem;
+	font-size: 1rem;
+	border-radius: 50%;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10px; /* Adds some spacing from the input fields */
+	transition: transform 0.3s ease;
+}
